@@ -1,0 +1,52 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Environment & Secrets =====
+config/llm_credentials.yaml
+
+# ===== Generated Outputs =====
+outputs/
+logs/
+state/
+
+# ===== Data (keep sample, ignore large files) =====
+data/*.xlsx
+data/*.xls
+data/*.parquet
+data/*.db
+data/*.sqlite
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Testing =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== Misc =====
+*.log
+*.bak
+*.tmp

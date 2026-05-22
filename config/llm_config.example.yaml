@@ -1,0 +1,38 @@
+# ============================================
+# LLM Configuration - Select ONE backend only
+# ============================================
+#
+# Copy this file to llm_config.yaml and customize:
+#   cp llm_config.example.yaml llm_config.yaml
+#
+
+# Active backend: ollama | openai | claude
+backend: ollama
+
+# ---------------------------------------------
+# OLLAMA (local models - free, requires ollama serve)
+# ---------------------------------------------
+ollama:
+  host: http://localhost:11434
+  # Change model to any Ollama model you have downloaded:
+  # llama3.2, mistral:7b, phi3, codellama, qwen2.5, etc.
+  model: llama3.2
+
+# ---------------------------------------------
+# OPENAI API (or compatible like vLLM, LiteLLM)
+# ---------------------------------------------
+openai:
+  base_url: https://api.openai.com/v1
+  # Change model to any OpenAI model:
+  # gpt-4o, gpt-4o-mini, gpt-3.5-turbo, or custom via base_url
+  model: gpt-4o-mini
+  # api_key can be set here or via OPENAI_API_KEY env var
+
+# ---------------------------------------------
+# CLAUDE API (Anthropic)
+# ---------------------------------------------
+claude:
+  # Change model to any Claude model:
+  # claude-sonnet-4-5-20250929, claude-opus-4-5-20250929, claude-haiku-3-5
+  model: claude-sonnet-4-5-20250929
+  # api_key can be set here or via ANTHROPIC_API_KEY env var

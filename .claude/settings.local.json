@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile src/main.py src/query/query_engine.py src/agents/reporting_agent.py src/agents/visualization_agent.py)",
+      "Bash(python -m py_compile src/query/query_engine.py)",
+      "PowerShell(New-Item *)"
+    ]
+  }
+}

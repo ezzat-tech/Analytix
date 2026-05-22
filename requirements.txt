@@ -1,0 +1,46 @@
+# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+polars>=0.19.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Data validation and profiling
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# LLM Backends (install only what you need)
+ollama>=0.3.0           # For local Ollama models
+openai>=1.0.0           # For OpenAI API
+anthropic>=0.39.0       # For Claude API
+
+# Config
+pyyaml>=6.0
+
+# Excel support
+openpyxl>=3.1.0
+xlrd>=2.0.0
+
+# Parquet support
+pyarrow>=12.0.0
+
+# SQL support (optional)
+sqlalchemy>=2.0.0
+
+# Testing
+pytest>=7.3.0
+pytest-asyncio>=0.21.0
+
+# Utilities
+python-dateutil>=2.8.0
+
+# API Bridge
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# SQL engine for TransformationAgent
+duckdb>=0.9.0

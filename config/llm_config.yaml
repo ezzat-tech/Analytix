@@ -1,0 +1,11 @@
+backend: ollama_paid
+claude:
+  model: claude-sonnet-4-5-20250929
+ollama:
+  host: http://localhost:11434
+  model: gemma4-31b:cloud
+ollama_paid:
+  model: gemma4:31b-cloud
+openai:
+  base_url: https://api.openai.com/v1
+  model: gpt-5.4
